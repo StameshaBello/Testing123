@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+    Name: Stamesha Bello
+    Date Created: 3/23/3019
+    Most Recent Revision: 3/26/3019
+-->
+<html lang="en">
+    <head>
+        <title>Hello World Form</title>
+
+        <link href="styles/helloworld.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body id="top">
+        <main>
+            <header>
+                <h1>Submission Form</h1>
+                <p><a href="helloworld.html">Home</a></p>
+            </header>
+            <hr />
+
+            <form action="helloworldformresults.html" method="POST">
+                Type Something: <input type="text" name="RandomTextInput" required />
+                <input type="submit" value="THIS AIN'T GON' DO NOTHIN'" />
+                <input type="reset" value="REDO">
+
+                <p>Pick a Choice, Any Choice:<br />
+                <input type="radio" name="pick" value="chocolate" checked />
+                    <label for="chocolate">Chocolate</label><br />
+                <input type="radio" name="pick" value="choco-pie" />
+                    <label for="choco-pie">Choco Pie</label><br />
+                <input type="radio" name="pick" value="eclair" />
+                    <label for="eclair">Eclair</label><br />
+                <input type="radio" name="pick" value="cookies" />
+                    <label for="cookies">Chocolate Chip Cookies</label><br />
+                <input type="submit" value="CHOOSE" />
+                <p><input type="reset" value="TRY AGAIN" /></p>
+                </p>
+
+                <div>
+                    <p>Username: <input type="text" name="Username" required /><br />
+                    <p>Password: <input type="password" name="Password" required /><br /></p>
+                    <input type="submit" value="SELECT" /><br />
+                    <p><input type="reset" value="DANG"></p>
+                    </p>
+
+                <p>Describe Yourself:<br />
+                    <input type="checkbox" name="describe" value="human" checked />
+                        <label for="human">Human</label><br />
+                    <input type="checkbox" name="describe" value="nothuman" />
+                        <label for="nothuman">Not Human</label><br />
+                    <input type="checkbox" name="describe" value="black" />
+                        <label for="black">Black</label><br />
+                    <input type="checkbox" name="describe" value="notblack" />
+                        <label for="notblack">Not Black</label><br />
+                    <input type="checkbox" name="describe" value="face" />
+                        <label for="face">Face</label><br />
+                    <input type="checkbox" name="describe" value="noface" />
+                        <label for="noface">No Face</label><br />
+                    <input type="checkbox" name="describe" value="covered" />
+                        <label for="covered">I think I'm covered</label><br />
+                    <input type="submit" value="Set Me UP" />
+                    <p><input type="reset" value="Whoops" /></p>
+                </p>
+                </div>
+
+                <p><select name="Computer Program Something...?" required>
+                      <option value="defalt" selected>-- Computer Program Thingy --</option>
+                      <option value="windows">Windows</option>
+                      <option value="mac">Mac</option>
+                      <option value="linux">Linux</option>
+                      <option value="other">Other</option>
+                      <option value="na">Not Applicable</option>
+                  </select>
+                  <p><input type="submit" value="Take me away" /></p>
+                  <p><input type="reset" value="Why you always lyin'?" /></p>
+                </p>
+
+                <p>Say Something Intelligent: <br />
+                    <textarea name="typesomething!!" style="width: 30%;" required>Write something</textarea><br />
+                    <input type="submit" value="Send" />
+                    <p><input type="reset" value"Lemme try again" /></p>
+                </p>
+            </form>
+            <hr />
+
+            <footer>
+                <p>&copy; 2019 Stamesha Bello. All rights reserved.</p>
+                <p><a href=#top>Back to Top</a></p>
+            </footer>
+        </main>
+    </body>
+</html>

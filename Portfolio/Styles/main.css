@@ -1,0 +1,59 @@
+/*
+  Name: Stamesha Bello
+  Date Created: 3/26/2019
+  Most Recent Revision: 3/26/2019
+*/
+body {
+    background-image: linear-gradient(rgb(247,219,167,0.8), rgb(241,171,134,0.8));
+    font-family: arial, helvetica, sans-serif;
+    color: #380707;
+    max-width: 900px;
+    margin: 0 auto;
+}
+header, footer {
+    background-color: #171900;
+    color: beige;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+h1 {
+    font-size: 2.5em;
+}
+nav {
+    border-top: 3px dashed #171900;
+    border-bottom: 3px dashed #171900;
+    margin-top: 4px;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: beige;
+}
+nav a:visited {
+    color: darkgray;
+}
+#back:hover {
+    text-decoration: underline;
+}
+nav a {
+    background-color: #171900;
+    padding: 8px;
+    border: thin solid beige;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 10px 20px 24px 20px;
+    width: 100px;
+    float: left;
+}
+.clear-float {
+    clear: both;
+}
+nav a:hover {
+    background-color: #f7dba7;
+    color: #891900;
+}
+nav a:active {
+    font-size: smaller;
+}

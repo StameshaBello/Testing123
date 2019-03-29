@@ -2,30 +2,76 @@
 <!--
     Name: Stamesha Bello
     Date Created: 3/20/2019
-    Most Recent Revision: 3/21/2019
+    Most Recent Revision: 3/28/2019
 -->
 <html lang="en">
   <head>
     <title>Stamesha Bello's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <style>
+        /* Color Scheme:
+              Background: Tumbleweed - #F1AB86
+              Default Font: Black Bean - #380707
+              Text Highlights: Licorice - #171900 & Deer - #C57B57
+              Additional Highlights: Tuscan - #F7DBA7
+        */
+        table, th, td {
+            border: 1px solid #380707;
+            padding: 5px 10px;
+            border-collapse: collapse;
+        }
+        table {
+            width: 90%;
+            margin: auto;
+        }
+        tr {
+            height: 30px;
+        }
+        tr th {
+            background-color: #171900;
+            color: beige;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #c57b57;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f7dba7;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px
+        }
+        article img {
+            float: left;
+        }
+        .right-content {
+            float: left;
+        }
+        article {
+            margin-bottom: 16px;
+        }
+    </style>
   </head>
 
   <body>
-      <main>
+      <main id="top">
           <header>
               <h1>Portfolio for Stamesha Bello</h1>
           </header>
-          <hr />
-          <!-- I need to add links to projects.html, contact.html, and testimonials.html -->
+
           <nav>
               <p><a href="projects.html">Projects</a></p>
-              <p><a href="contact.html">Contacts</a></p>
+              <p><a href="contact.html">Contact Me</a></p>
               <p><a href="testimonials.html">Testimonials</a></p>
+              <div class="clear-float"></div>
           </nav>
-          <hr />
 
           <section>
               <article id="about-me">
                   <h2><em>About Me</em></h2>
+                      <img src="images/me-but-smaller.jpg" width=300px alt="Not a portrait of me but okay" style="margin-right: 10px;" />
+
                       <p>I am simply a young person that's new to this whole coding experience.
                       So far, I really like it and hope to continue learning more in due time.
                       I just graduated from the University of Texas at Austin with a BSA degree
@@ -38,38 +84,84 @@
                       expressive speech utilized by voice actors/actresses to the amazing animation
                       brought to life by creators. I want to try my hand at cosplaying, but I haven't
                       quite gotten there yet.</p>
+                  <div class="clear-float"></div>
               </article>
 
-              <article id="past-experiences">
+              <article id="experience">
                   <h2><em>Past Experiences</em></h2>
-                      <p><span style="background-color: maroon; border: thin solid gold;">Unfortunately, I do not have much work experience.</span> I worked at an eatery
-                      called Kinsolving Dining, which was situated within a dorm of the same name
-                      (minus the "dining" part, of course). When I worked there, I did a number of
-                      tasks briefly, but I mainly bussed tables and worked at the cash register.
-                      Since I only chose to work there for a semester, I'm sure you can deduce whether
-                      if I enjoyed myself there or not.</p>
-                      <p>Rather than focusing on my lack of official work experience, I'd like to
-                      draw your attention to my <em>abundance</em> of real-life experience. <strong><em>What</em></strong> might that
-                      be exactly? Well, I'd like to know the answer to that too. <span style="background-color: orange; border: thick solid darkblue">I have plenty of
-                      experience being disappointed</span>, if that counts for anything. *sniffle*</p>
+                      <img src="images/disappointment.bmp.png" style="width: 300px;" alt="Disappointment" />
+
+                      <div class="right-content">
+                      <table>
+                          <caption>Employment History</caption>
+                          <thead>
+                              <tr>
+                                  <th>Years of Employment</th>
+                                  <th>Title</th>
+                                  <th>Company</th>
+                              </tr>
+                          </thead>
+
+                          <tbody>
+                              <tr>
+                                  <td>Aug 2015 - Dec 2018</td>
+                                  <td>Student</td>
+                                  <td>The University of Texas at Austin</td>
+                              </tr>
+
+                              <tr>
+                                  <td>Sep 2015 - Dec 2015</td>
+                                  <td>Cashier & Busser</td>
+                                  <td>Kinsolving Dining</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                  <div class="clear-float"></div>
               </article>
 
               <article id="hobbies">
                   <h2><em>Hobbies</em></h2>
-                      <p>Well, I <em>guess</em> I kind of addressed this section within the "About Me" portion,
-                      huh? <strong>Oops</strong>. Though, I didn't <em>entirely</em> exhaust my list of hobbies up there. I didn't
-                      mention that I like playing video games or cooking. Well, I guess I can't say that
-                      I <em>particularly</em> enjoy cooking. It's more so that I get excited when I think
-                      that a recipe will turn out great. (Of course, referencing my abundance of
-                      <em>"experiences,"</em> I'm sure you can imagine how that usually turns out.)</p>
-                      <p>I would particularly enjoy looking great if that were possible. Too bad I don't
-                      have good-looking money. *sigh*</p>
+                      <img src="images/aang-but-square.jpg" width=300px alt="Not a hobby, but it's Aang so..." />
+
+                      <div class="right-content">
+                      <ul>
+                          <li>Food!!! :o</li>
+                              <ol>
+                                  <li>Burgers!</li>
+                                  <li>Lasagna</li>
+                                  <li>Home-made Spaghetti</li>
+                              </ol>
+                          <li>Video Games</li>
+                              <ol>
+                                  <li>The Legend of Zelda: Twilight Princess</li>
+                                  <li>The Legend of Zelda: Windwaker</li>
+                                  <li>Paper Mario: The Thousand-Year Door</li>
+                              </ol>
+                      </ul>
+
+                      <ul>
+                          <li>Things I Like to do While Unemployed:</li>
+                              <ul list-style-type="circle">
+                                  <li>Cry</li>
+                                  <li>Sew ill-fitting clothing</li>
+                                  <li>Crochet abominable coasters</li>
+                              </ul>
+                          <li>Places to which I Want to Travel:</li>
+                              <ul>
+                                  <li>Korea -- smh</li>
+                                  <li>Japan -- really smh</li>
+                                  <li>My dreams (not the useless ones)</li>
+                              </ul>
+                      </ul>
+                      </div>
+                      <div class="clear-float"></div>
               </article>
           </section>
 
           <footer>
-              <hr />
               <p>&copy; 2019 Stamesha Bello. All rights reserved.</p>
+              <p><a href=#top id="back">Back to Top</a></p>
           </footer>
 
       </main>

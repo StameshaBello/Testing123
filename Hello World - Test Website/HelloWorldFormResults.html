@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+    Name: Stamesha Bello
+    Date Created: 3/23/3019
+    Most Recent Revision: 3/26/3019
+-->
+<html lang="en">
+    <head>
+        <title>Hello World Form Results </title>
+          <link href="styles/helloworld.css" rel="stylesheet" type="text/css" />
+          <style>
+            ul {
+                color: darkviolet;
+            }
+            li {
+                border-bottom: 1px black dashed
+            }
+            #better {
+                border: 3px red dashed
+            }
+            .warning {
+                /*display: none;*/
+                /*The foward slash and asterisk combo yields a comment in CSS.
+                <!-- --> is used for HTML comments only.
+                */
+                color: red;
+                font-weight: bold;
+            }
+            div.warning {
+                font-style: italic;
+            }
+            #good, #best {
+                color: blue;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+          </style>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1>Submission Form Results</h1>
+                <p><a href="helloworld.html">Home</a></p>
+                <p><a href="helloworldform.html">Submission Form</a></p>
+            </header>
+            <hr />
+
+            <div style="background-color: rgb(255,0,0);">Red using rgb</div>
+            <div style="background-color: rgba(255,0,0,0.5);">Red with rgba using 50% opacity</div>
+            <div style="background-color: rgb(178,31,40);">Dark red using rgb</div>
+            <div style="background-color: #ff0000;">Red using hexadecimal</div>
+            <div style="background-color: #f00;">Red using hexadecimal</div>
+            <div style="background-color: #b21f28;">Dark red using hexadecimal</div>
+
+            <div class="warning">
+                <p>The following errors occurred: </p>
+            </div>
+                <p class="warning">First Name is required.</p>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" />
+
+                <p class="warning">Last Name is required.</p>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" />
+
+            <div id="good">
+                <h2>Somethin' Good...?</h2>
+                <p>This is supposed to be good; I dunno, I've never seen it.</p>
+            </div>
+
+            <div id="better">
+                <h2>Somethin' Better</h2>
+                <p>I've never laid eyes on this, but apparently it's better than
+                  whatever it is that's above it.</p>
+            </div>
+
+            <div id="best" style="width: 300px;">
+                <h2>Best Somethin'</h2>
+                <p style="text-indent: 5%;">This is the best. Don't ask me why or how; it's just the best.
+                  Don't ask me <strong>ANY</strong> questions.</p>
+            </div>
+
+            <ul>
+                <li>Frunda</li>
+                <li>Herald</li>
+                <li>Polian</li>
+            </ul>
+            <hr />
+
+            <footer>
+                <p>&copy; 2019 Stamesha Bello. All rights reserved.</p>
+            </footer>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cdn.pixabay.com/photo/2015/05/07/12/40/mushrooms-756406_960_720.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: beige;
+    font-family: 'Poppins', sans-serif;
+}
+header, footer, nav {
+    background-color: rgba(139,0,0,0.8);
+}
+header {
+    padding-bottom: 10px;
+}
+nav {
+    padding: 10px 0;
+}
+nav {
+    border-top: thin solid beige;
+    border-bottom: thin solid beige;
+}
+footer {
+    border-top: thin solid beige;
+    text-align: center;
+}
+a {
+    background-color: beige;
+    color: #2f4f4f;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(139,0,0);
+}
+a:hover {
+    font-weight: bold;
+}
+a:active {
+    text-decoration: none;
+}
+.clear-float {
+    clear: both;
+}

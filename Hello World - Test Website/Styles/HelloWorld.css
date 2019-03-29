@@ -1,0 +1,5 @@
+body {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(127,255,212,0.5)), url("../images/tree--but-bigger.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

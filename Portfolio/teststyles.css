@@ -1,0 +1,20 @@
+body {
+    background-color: lightblue;
+}
+
+header, footer, #special {
+    background-color: darkgreen;
+    color: white;
+}
+
+.border {
+    border: thick solid blue;
+}
+
+#experience {
+    border: thick dashed orange;
+}
+
+a {
+    text-decoration: none;
+}

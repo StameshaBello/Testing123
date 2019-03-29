@@ -2,37 +2,120 @@
 <!--
      Name: Stamesha Bello
      Date Created: 3/21/2019
-     Most Recent Revision: 3/21/2019
+     Most Recent Revision: 3/28/2019
 -->
-<html>
+<html lang="en">
     <head>
         <title>Stamesha Bello's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css" />
+        <style>
+            label, fieldset {
+                font-size: 1.1em;
+            }
+            input[type=text] {
+                margin: 12px 0px;
+                padding: 8px 8px;
+                width: 50%;
+                border: 2px solid #171900;
+                box-sizing: border-box;
+                border-radius: 3px;
+                font-size: 1.1em;
+                background-color: #fff;
+            }
+            fieldset {
+                margin: 12px 0px;
+                padding: 12px 20px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            select, textarea {
+                margin: 12px 0px;
+                font-size: 1em;
+            }
+            input[type=submit] {
+                padding: 4px 8px;
+                font-size: 1.2em;
+                margin-bottom: 10px;
+                background-color: #171900;
+                color: beige;
+            }
+            input[type=submit]:hover {
+                background-color: #f7dba7;
+                color: #891900;
+            }
+            textarea {
+                width: 100%;
+                height: 200px;
+                margin: 12px 0px;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #171900;
+                border-radius: 3px;
+                background-color: #fff;
+                resize: none;
+            }
+        </style>
     </head>
 
     <body>
-        <main>
+        <main id="top">
             <header>
-                <h1>Contacts</h1>
+                <h1>Contact Me</h1>
             </header>
-            <hr />
 
             <nav>
                 <p><a href="index.html">Home</a></p>
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="testimonials.html">Testimonials</a></p>
+                <div class="clear-float"></div>
             </nav>
-            <hr />
 
-            <section>
-                <article id="article-title">
-                    <h2>Article Title</h2>
-                    <p>Hmm</p>
-                </article>
-            </section>
-            <hr />
+            <h2>Information Request</h2>
+                <form action="submit.html" method="POST">
+                    <label for="first-name">First Name:</label><br />
+                    <input type="text" id="first-name" name="first-name" /><br />
+
+                    <label for="last-name">Last Name:</label><br />
+                    <input type="text" id="last-name" name="last=name" /><br />
+
+                    <label for="phone">Phone Number</label><br />
+                    <input type="text" id="phone" name="phone" /><br />
+
+                    <label for="contact">Best time to call:</label><br />
+                    <select id="contact" name="contact">
+                        <option value="default" selected>--Select One--</option>
+                        <option value="morning">Morning (8AM to 12PM Eastern)</option>
+                        <option value="afternoon">Afternoon (12PM to 5PM Eastern)</option>
+                        <option value="evening">Evening (5PM to 8PM Eastern)</option>
+                    </select><br />
+
+                    <fieldset>
+                        <legend>I am interested in (check all that apply):</legend><br />
+                        <input type="checkbox" id="front-end" name="interest" value="front-end" checked />
+                            <label for="front-end">Front-End Web Development</label><br />
+                        <input type="checkbox" id="back-end" name="interest" value="back-end" />
+                            <label for="back-end">Back-End Web Development</label><br />
+                        <input type="checkbox" id="database" name="interest" value="database" />
+                            <label for="database">Database Design</label><br />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>I have filled in the client questionnaire form:</legend><br />
+                        <input type="radio" id="choice1" name="questionnaire" value="yes" checked />
+                            <label for="yes">Yes</label><br />
+                        <input type="radio" id="choice2" name="questionnaire" value="no" />
+                            <label for="no">No</label><br />
+                    </fieldset>
+
+                    <label for="additional-info">Additional information:</label><br />
+                      <textarea id="additional-info" name="additional-info"></textarea><br />
+
+                    <input type="submit" name="submit" value="Submit"/>
+                </form>
 
             <footer>
                 <p>&copy; 2019 Stamesha Bello. All rights reserved.</p>
+                <p><a href=#top id="back">Back to Top</a></p>
             </footer>
         </main>
     </body>
