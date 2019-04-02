@@ -22,11 +22,11 @@
                 padding-bottom: 12px;
                 margin-bottom: 4px;
             }
-            a.btn {
+            .btn {
                 background-color: #5b7d87;
                 color: #fef9ff;
             }
-            a.btn:hover {
+            .btn:hover {
                 font-weight: bold;
             }
         </style>
@@ -58,7 +58,55 @@
                 </div>
             </div>
 
-        </div>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="portfolio01">
+                        <!-- "card-header" assigns this as top section of card. When more than one
+                          card, must assign each a different id. -->
+                        <h5 class="mb-0">
+                          <!-- "mb-0" alters the title to have no margin at the bottom -->
+                            <button type="button" class="btn btn-link" data-toggle="collapse"
+                              data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              <!-- "btn btn-link" defines a button that includes text that should appear
+                                in the card title -->
+                              <!-- "toggle" is jQuery's toggle option to collapse and expand card's body.
+                                When set to "false", card is closed when page first loads. -->
+                                My First Portfolio Piece
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <!-- div named "#collapseOne"; same name put into "data-target" within the button above, so
+                          clicking the button will cause the body to collapse. -->
+                        <!-- ".collapse" uses jQuery function that makes the body collapsed by default. If want it open
+                          by default, use ".collapse show" -->
+                        <!-- "data-parent=#accordionExample" designates this card body as a child of the whole accordion. -->
+                        <div class="card-body">
+                            <p><a href="" target="_blank">Name of Website</a></p>
+                            <figure><img src="images/accordionExercise.png" alt="Screenshot of Home Page" /></figure>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="portfolio02">
+                        <h5 class="mb-0">
+                            <button type="button" class="btn btn-link" data-toggle="collapse"
+                              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              My Second Portfolio Piece
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><a href="" target="_blank">Other Website Name</a></p>
+                            <figure><img src="../Hello World - Test Website/Images/Tree--.jpg" width=300px; alt="Kind of a Screenshot of Home Page"/></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/download/#compiled-css-and-js -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
